@@ -12,20 +12,14 @@ body {
   margin-left: 2rem;
 
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .filter-function {
 }
 
-.button-todos {
-  margin-top: 2rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  padding-top: 0.15rem;
-  padding-bottom: 0.15rem;
-  border-radius: 0.15rem;
-  font-size: 14px;
+.button-remove {
+  margin-top: 1.75rem;
 }
 .your-todos {
   margin-top: 3.5rem;

@@ -1,23 +1,56 @@
 // initial State für die ToDo-App
 const state = {
-filterModus = "All",
-todoInput = "",
-todos = []
+  filterModus: "All",
+  todoInput: "",
+  todos: [],
+};
+// Daten updaten
+// function updateState() {
+// const currentTodoInput = document.querySelector("#your-todos").value;
+// state.todoInput = currentTodoInput;
+// const currentFilterModus =
+// state.filterModus =
+
+// state.todos =
+
+// }
+// 1. Anwählen der filterCheckbox = treffen einer Auswahl der angezeigten Werte
+// const allFilter = document.querySelector("#radio_all").addEventListener('click', filterModus)
+// const openFilter = document.querySelector("#radio_open").addEventListener('click', filterModus)
+// const addFilter = document.querySelector("#radio_done").addEventListener('click', filterModus)
+
+// 2. click the buttonRemove = alle Todo-Tasks werden gelöscht
+// const removeButton = document.querySelector("#button-remove").addEventListener('click', clearAll)
+
+// 3. click in newTodo = schreiben einer Task mit mind. 5 Zeichen im Eingabefeld
+// const yourTodoList = document.querySelector("#your-todos").addEventListener('input', updateState)
+
+// 4. click the addButton = die geschriebene Aufgabe wird der Liste hinzugefügt
+// const variablenName = document.("#id aus HTML/CSS").addEventListener("Event", function (){})
+const addButton = document
+  .querySelector("#add-button")
+  .addEventListener("click", yourTodos);
+
+function yourTodos() {}
+
+function createTodoList() {
+  const ulList = document.querySelector("#create-todo-list");
+  const todoList = document.createElement("li");
+  ulList.appendChild(todoList);
+
+  const checkBox = document.createElement("input");
+  checkBox.type = "checkbox";
+  checkBox.id = "check";
+  todoList.appendChild(checkBox);
+
+  // let newInput = document.getElementById("#your-todos").value;
+  // let textInput = document.createTextNode(inputValue);
 }
 
-function render() {
+// 5. click the checkedBox = abhaken der erfüllten Aufgabe (Task isDone)
+// const todoIsDone = document.querySelector("checkedbox").addEventListener('click', isDone)
 
-}
+// Ausgabe updaten
+function render() {}
 
-function updateState() {
-    // click in newTodo = schreiben einer Task mit mind. 5 Zeichen im Eingabefeld
-
-    // click the addButton = die geschriebene Aufgabe wird der Liste hinzugefügt
-const newTodoTask = document.querySelector(addButton).addEventListener('click', )
-    // click the buttonRemove = alle Todo-Tasks werden gelöscht
-const removeButton = document.querySelector(buttonRemove).addEventListener('click', clearAll )
-    // Anwählen der filterCheckbox = treffen einer Auswahl der angezeigten Werte
-
-    // click the checkedBox = abhaken der erfüllten Aufgabe (Task isDone)
-   
-}
+createTodoList();

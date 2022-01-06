@@ -13,34 +13,38 @@
     </header>
 
     <article>
-      <section class="filter-function">
+      <section>
         <h3>Filter & Options</h3>
-        <div>
-          <input type="radio" id="radio-all" name="filter-checkbox" />
+        <div class="filter-function">
+          <input type="radio" id="radio_all" name="filter-checkbox" />
           <label for="radio-all">All</label>
         </div>
-        <div>
-          <input type="radio" id="radio-open" name="filter-checkbox" />
+        <div class="filter-function">
+          <input type="radio" id="radio_open" name="filter-checkbox" />
           <label for="radio-open">Open</label>
         </div>
-        <div>
-          <input type="radio" id="radio-done" name="filter-checkbox" />
+        <div class="filter-function">
+          <input type="radio" id="radio_done" name="filter-checkbox" />
           <label for="radio-done">Done</label>
         </div>
 
-        <button class="button-remove">Remove Done ToDo's</button>
+        <button id="button-remove">Remove Done ToDo's</button>
       </section>
     </article>
-    <article class="your-todos">
+    <article>
       <h3>Your Task's</h3>
-      <input type="text" name="new-todos" value="" placeholder="whats up?" />
-      <button class="add-new-Element">Add</button>
-      <!-- 
-          <ul>
-        <li class="checkedbox" style="text-decoration: none">
-          <input type="checkbox" />
-        </li>
-      </ul> -->
+      <input
+        id="your-todos"
+        type="text"
+        name="new-todos"
+        value=""
+        placeholder="whats up?"
+      />
+      <button id="add-button">Add</button>
+
+      <ul id="create-todo-list">
+        <!-- <li class="checkedbox"><input type="checkbox" /></li>-->
+      </ul>
     </article>
   </main>
   <body>

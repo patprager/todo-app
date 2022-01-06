@@ -16,13 +16,19 @@ body {
 }
 
 .filter-function {
+  font-size: 14px;
 }
 
-.button-remove {
+#button-remove {
   margin-top: 1.75rem;
 }
-.your-todos {
-  margin-top: 3.5rem;
+#your-todos {
+  _margin-top: 3.5rem;
 }
 .checkedbox {
+  text-decoration: none;
+}
+
+#add-button {
+  font-style: black;
 }

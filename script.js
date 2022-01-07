@@ -2,18 +2,19 @@
 const state = {
   filterModus: "All",
   todoInput: "",
-  todos: [],
+  todos: [
+    { text: "Bewerbung abschicken", isDone: false },
+    { text: "Einkaufen gehen", isDone: true },
+  ],
 };
 // Daten updaten
-// function updateState() {
-// const currentTodoInput = document.querySelector("#your-todos").value;
-// state.todoInput = currentTodoInput;
-// const currentFilterModus =
-// state.filterModus =
-
-// state.todos =
-
-// }
+function updateState() {
+  // const currentTodoInput = document.querySelector("#your-todos").value;
+  // state.todoInput = currentTodoInput;
+  // const currentFilterModus =
+  // state.filterModus =
+  // state.todos =
+}
 // 1. Anwählen der filterCheckbox = treffen einer Auswahl der angezeigten Werte
 // const allFilter = document.querySelector("#radio_all").addEventListener('click', filterModus)
 // const openFilter = document.querySelector("#radio_open").addEventListener('click', filterModus)
@@ -30,8 +31,18 @@ const state = {
 const addButton = document
   .querySelector("#add-button")
   .addEventListener("click", yourTodos);
+// click addButton und füge den Text in createTodoList ein
 
-function yourTodos() {}
+function yourTodos() {
+  const addTodo = document.querySelector("#add-button");
+  createTodoList();
+
+  const newInput = document.querySelector("#your-todos");
+  const textInput = document.createTextNode("#your-todost");
+  newInput.appendChild(textInput);
+}
+
+// ___________________________________
 
 function createTodoList() {
   const ulList = document.querySelector("#create-todo-list");

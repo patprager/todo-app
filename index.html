@@ -7,47 +7,48 @@
     <title>To-Do-Application</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <main>
-    <header>
-      <h2>ToDo-App</h2>
-    </header>
-
-    <article>
-      <section>
-        <h3>Filter & Options</h3>
-        <div class="filter-function">
-          <input type="radio" id="radio_all" name="filter-checkbox" />
-          <label for="radio-all">All</label>
-        </div>
-        <div class="filter-function">
-          <input type="radio" id="radio_open" name="filter-checkbox" />
-          <label for="radio-open">Open</label>
-        </div>
-        <div class="filter-function">
-          <input type="radio" id="radio_done" name="filter-checkbox" />
-          <label for="radio-done">Done</label>
-        </div>
-
-        <button id="button-remove">Remove Done ToDo's</button>
-      </section>
-    </article>
-    <article>
-      <h3>Your Task's</h3>
-      <input
-        id="your-todos"
-        type="text"
-        name="new-todos"
-        value=""
-        placeholder="whats up?"
-      />
-      <button id="add-button">Add</button>
-
-      <ul id="create-todo-list">
-        <!-- <li class="checkedbox"><input type="checkbox" /></li>-->
-      </ul>
-    </article>
-  </main>
   <body>
+    <main>
+      <header>
+        <h1>ToDo-App</h1>
+      </header>
+
+      <article>
+        <section>
+          <h2>Filter & Options</h2>
+          <div class="filter-function">
+            <input type="radio" id="radio-all" name="filter-checkbox" />
+            <label for="radio-all">All</label>
+          </div>
+          <div class="filter-function">
+            <input type="radio" id="radio-open" name="filter-checkbox" />
+            <label for="radio-open">Open</label>
+          </div>
+          <div class="filter-function">
+            <input type="radio" id="radio-done" name="filter-checkbox" />
+            <label for="radio-done">Done</label>
+          </div>
+
+          <button id="button-remove">Remove Done ToDo's</button>
+        </section>
+      </article>
+      <article>
+        <h2>Your Task's</h2>
+        <input
+          id="your-todos"
+          type="text"
+          name="new-todos"
+          value=""
+          placeholder="whats up?"
+        />
+        <button id="add-button">Add</button>
+
+        <ul id="create-todo-list">
+          <!-- <li class="checkedbox"><input type="checkbox" /></li>-->
+        </ul>
+      </article>
+    </main>
+
     <script src="script.js"></script>
   </body>
 </html>
